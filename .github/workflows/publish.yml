@@ -28,6 +28,6 @@ jobs:
       with:
         go-version: 1.15
     - name: Fetch release from proxy
-      run: go get -d zombiezen.com/go/postgrestest@"$(echo "$GITHUB_REF" | sed -e 's:^refs/tags/::')"
+      run: go get -d zombiezen.com/go/ev3dev@"$(echo "$GITHUB_REF" | sed -e 's:^refs/tags/::')"
       env:
         GO111MODULE: on
